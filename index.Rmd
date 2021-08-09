@@ -19,6 +19,10 @@ This is a _sample_ book written in **Markdown**. You can use anything that Pando
 
 The **bookdown** package can be installed from CRAN or Github:
 
+Servidor do livro: bookdown::serve_book()
+
+servr::daemon_stop(1) para parar
+
 ```{r eval=FALSE}
 install.packages("bookdown")
 # or the development version
@@ -28,6 +32,19 @@ install.packages("bookdown")
 Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
+
+```{r}
+head(iris,20)
+```
+
+```{r}
+knitr::kable(
+  head(iris,20), caption = "Nice table - kable",
+  booktabs=TRUE
+)
+```
+
+
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
