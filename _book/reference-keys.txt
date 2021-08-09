@@ -1,3 +1,6 @@
+tab:unnamed-chunk-3
+fig:nice-fig
+tab:nice-tab
 prerequisites
 intro
 literature
@@ -6,7 +9,3 @@ applications
 example-one
 example-two
 final-words
-fig:nice-fig
-tab:nice-tab
-literature-1
-tab:unnamed-chunk-3
